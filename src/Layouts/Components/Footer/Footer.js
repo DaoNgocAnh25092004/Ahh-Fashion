@@ -1,5 +1,12 @@
 import classNames from 'classnames/bind';
 import styles from './Footer.module.scss';
+import { Google, Facebook, Tiktok } from "../../../components/Icons/icons";
+import logo from '../../../assets/images/boconthuong.png';
+import image1 from '../../../assets/images/img1.jpg';
+import image2 from '../../../assets/images/img2.jpg';
+import image3 from '../../../assets/images/img3.jpg';
+import image4 from '../../../assets/images/img4.jpg';
+import image5 from '../../../assets/images/img5.jpg';
 
 const cx = classNames.bind(styles);
 
@@ -12,20 +19,21 @@ function Footer() {
                     <h4>Giới thiệu</h4>
                     <p>Hộ Kinh Doanh Bao GT</p>
                     <p>MST 8752797026-001 do UBND Q. Tân Bình cấp ngày 14/11/2022</p>
+                    <img src={logo} alt="logo" />
                 </div>
 
                 <div className={cx('footer-section')}>
                     <h4>Liên kết</h4>
                     <ul>
-                        <li>Tìm kiếm</li>
-                        <li>Giới thiệu</li>
+                        <li>Tìm kiếm sản phẩm</li>
+                        <li>Giới thiệu về sản phẩm</li>
                         <li>Chính sách thanh toán</li>
                         <li>Chính sách khiếu nại</li>
-                        <li>Chính sách vận chuyển</li>
-                        <li>Chính sách đổi trả</li>
+                        <li>Chính sách giao và vận chuyển</li>
+                        <li>Chính sách yêu cầu đổi trả</li>
                         <li>Chính sách bảo hành</li>
-                        <li>Chính sách kiểm hàng</li>
-                        <li>Chính sách bảo mật</li>
+                        <li>Chính sách về kiểm hàng</li>
+                        <li>Chính sách về bảo mật</li>
                     </ul>
                 </div>
 
@@ -35,19 +43,37 @@ function Footer() {
                     <p>📞 086 2642568</p>
                     <p>📜 coming soon</p>
                     <p>📧 outerity.local@gmail.com</p>
+                    <div className={cx("social-icons")}>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                            <Facebook className={cx("icon")} />
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                            <Tiktok className={cx("icon")} />
+                        </a>
+                        <a href="https://google.com" target="_blank" rel="noopener noreferrer">
+                            <Google className={cx("icon")} />
+                        </a>
+                    </div>
                 </div>
 
                 <div className={cx('footer-section')}>
-                    <h4>Fanpage</h4>
-                    <p>Sẽ được cung cấp sau</p>
+                    <h4>Instagram</h4>
+                    <div className={cx('instagram-grid')}>
+                        <img src={image1} alt="Instagram 1" />
+                        <img src={image2} alt="Instagram 2" />
+                        <img src={image3} alt="Instagram 3" />
+                        <img src={image4} alt="Instagram 4" />
+                        <img src={image5} alt="Instagram 3" />
+                        <img src={image1} alt="Instagram 1" />
+                    </div>
                 </div>
-                
-                
+
+
 
             </div>
             <div className={cx('copyright')}>
-                    <p>Copyright © 2025 Outerity. Powered by Haravan</p>
-                </div>
+                <p>Copyright © 2025 Outerity. Powered by Haravan</p>
+            </div>
         </div>
     )
 }

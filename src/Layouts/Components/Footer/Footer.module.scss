@@ -1,44 +1,101 @@
-// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 .footer {
-    background-color: white;
-    padding: 10px;
+    background-color: #f8f9fa;
+    padding: 40px 0;
     font-size: 14px;
-    opacity: 0.7;
-    font-family: 'Gill Sans', sans-serif;
-    .container{
+    font-family: 'Inter', sans-serif;
+    color: #333;
+
+    .container {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap;
         max-width: 1300px;
         margin: auto;
     }
-}
-.footer-section{
-    width: 22%;
-}
 
-h4{
-    padding: 20px 0;
-    font-size: 18px;
-    font-weight: normal;
-}
-ul{
-    list-style: none;
-    li{
-        margin-bottom: 7px;
-        &:hover{
-            text-decoration: underline;
-            text-transform: initial;
+    .footer-section {
+        width: 22%;
+
+        .social-icons {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+
+            .icon {
+                width: 30px;
+                height: 30px;
+                transition: transform 0.3s;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
         }
     }
-}
-.copyright{
-    margin-top: 10px;
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 16px;
-    color: #666;
-    padding-top: 15px;
-    border-top: 1px solid #cfcaca;
+
+
+
+    img {
+        // padding-top: 20px;
+        width: 170px; // Đảm bảo kích thước đồng đều
+        height: auto; // Giữ tỷ lệ ảnh
+        object-fit: contain; // Hiển thị đầy đủ ảnh mà không bị cắt méo
+        display: block;
+        margin: auto 0; // Căn giữa ảnh trong footer-section
+    }
+
+
+    h4 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #007bff;
+        margin-bottom: 15px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin-bottom: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                color: #007bff;
+                transform: translateX(3px);
+            }
+        }
+    }
+
+    .instagram-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+
+        img {
+            width: 100%;
+            height: 80px;
+            object-fit: cover;
+        }
+
+        & :hover {
+            transform: scale(1.05);
+            opacity: 0.8;
+            background-color: black;
+        }
+
+    }
+
+    .copyright {
+        text-align: center;
+        margin-top: 20px;
+        padding-top: 15px;
+        border-top: 1px solid #ddd;
+        font-size: 14px;
+        color: #666;
+    }
 }
