@@ -1,5 +1,82 @@
 .header {
-    background-color: aquamarine;
+    height: var(--header-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 
-    height: var(--height-header);
+    >div {
+        width: var(--width-screen);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 15px;
+
+        >div:first-child {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            width: 100%;
+
+            input[type="text"] {
+                border: 1px solid var(--primary-color);
+                border-radius: 20px;
+                padding: 10px 20px;
+                outline: none;
+            }
+
+            button {
+                background-color: var(--skyblue-color);
+                color: var(--white-color);
+                padding: 10px 20px;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+
+        }
+
+
+
+        >div:last-child {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            padding: 0 20px;
+        }
+
+
+    }
+
+
+}
+
+.list--icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    >.icon {
+        background-color: var(--skyblue-color);
+        padding: 10px;
+        border-radius: 50%;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+}
+
+
+img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+
+
+
+
 }
