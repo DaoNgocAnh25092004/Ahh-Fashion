@@ -3,7 +3,7 @@
 .footer {
     background-color: #f8f9fa;
     padding: 40px 0;
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'Inter', sans-serif;
     color: #333;
 
@@ -47,7 +47,7 @@
 
 
     h4 {
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 700;
         color: #007bff;
         margin-bottom: 15px;
@@ -56,16 +56,17 @@
     ul {
         list-style: none;
         padding: 0;
+        font-family: 'Inter', sans-serif;
 
         li {
             margin-bottom: 8px;
-            font-size: 14px;
+            font-size: 16px;
             cursor: pointer;
-            transition: all 0.3s ease-in-out;
+            transition: all 0.2s ease-in-out;
 
             &:hover {
                 color: #007bff;
-                transform: translateX(3px);
+                transform: translateX(2px);
             }
         }
     }
