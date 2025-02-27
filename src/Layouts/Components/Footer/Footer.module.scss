@@ -38,12 +38,11 @@
 
 
     img {
-        // padding-top: 20px;
-        width: 170px; // Đảm bảo kích thước đồng đều
-        height: auto; // Giữ tỷ lệ ảnh
-        object-fit: contain; // Hiển thị đầy đủ ảnh mà không bị cắt méo
+        width: 170px;
+        height: auto; 
+        object-fit: contain; 
         display: block;
-        margin: auto 0; // Căn giữa ảnh trong footer-section
+        margin: auto 0; 
     }
 
 
