@@ -64,7 +64,6 @@
 
     }
 
-
 }
 
 .listShort:hover:after,
@@ -84,7 +83,11 @@
     cursor: pointer;
 }
 
-
 .menu-item:hover .dropdown {
     display: block;
+}
+
+.active{
+    color: var(--skyblue-color);
+    font-weight: 600;
 }

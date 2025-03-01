@@ -14,16 +14,18 @@
     user-select: none;
     transition: all 0.3s ease-in-out;
     margin: 0.5rem;
+
     &.disabled {
         pointer-events: none;
         opacity: 0.5;
     }
 }
 
-.icon + .title,
-.title + .icon {
+.icon+.title,
+.title+.icon {
     margin-left: 0.8rem;
 }
+
 // Button types
 
 .rounded {
@@ -52,10 +54,12 @@
 .outline {
     color: var(--primary-color);
     border-color: currentColor;
+    border-radius: 20px;
 
     &:hover {
         border-color: currentColor;
-        background-color: rgba(31, 31, 31, 0.06);
+        background-color: var(--skyblue-color);
+        color: var(--white-color);
     }
 }
 
@@ -75,6 +79,7 @@
     min-width: 15rem;
     padding: 1.4rem 15rem;
 }
+
 .width-full {
     width: 100%;
 }
