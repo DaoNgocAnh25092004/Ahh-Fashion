@@ -27,7 +27,7 @@
                 outline: none;
             }
 
-          
+
 
         }
 
@@ -54,9 +54,10 @@
     gap: 4rem;
 
     >.icon {
-        background-color: var(--skyblue-color);
+        background-color: var( --brown-color);
         padding: 8px;
         border-radius: 20px;
+        color: var(--white-color);
 
         &:hover {
             cursor: pointer;
@@ -97,7 +98,7 @@ img {
 
 
         &:hover {
-            background-color: var(--skyblue-color);
+            background-color: var( --brown-color);
             color: var(--white-color);
         }
     }
@@ -106,9 +107,10 @@ img {
 
 .user-icon {
     padding: 8px;
-    background-color: var(--skyblue-color);
+    background-color: var( --brown-color);
     border-radius: 20px;
     cursor: pointer;
+    color: var(--white-color);
 }
 
 

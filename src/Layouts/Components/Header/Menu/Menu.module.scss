@@ -28,7 +28,7 @@
                 align-items: center;
 
                 &:hover {
-                    background-color: var(--skyblue-color);
+                    background-color: var(--brown-color);
                     color: var(--white-color);
                 }
             }
@@ -56,7 +56,7 @@
                 justify-content: center;
                 align-items: center;
                 &:hover {
-                    background-color: var(--skyblue-color);
+                    background-color: var( --brown-color);
                     color: var(--white-color);
                 }
             }
@@ -88,6 +88,6 @@
 }
 
 .active{
-    color: var(--skyblue-color);
+    color: var(--brown-color);
     font-weight: 600;
 }
