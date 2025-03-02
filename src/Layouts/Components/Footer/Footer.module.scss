@@ -11,7 +11,7 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        max-width: 1300px;
+        max-width: var(--width-screen);
         margin: auto;
     }
 
@@ -35,16 +35,13 @@
         }
     }
 
-
-
     img {
         width: 170px;
-        height: auto; 
-        object-fit: contain; 
+        height: auto;
+        object-fit: contain;
         display: block;
-        margin: auto 0; 
+        margin: auto 0;
     }
-
 
     h4 {
         font-size: 20px;
@@ -87,7 +84,6 @@
             opacity: 0.8;
             background-color: black;
         }
-
     }
 
     .copyright {
