@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 .footer {
-    background-color: #f8f9fa;
+    background-color: var( --background-color);
     padding: 40px 0;
     font-size: 16px;
     font-family: 'Inter', sans-serif;
@@ -11,7 +11,7 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        max-width: 1300px;
+        max-width: var(--width-screen);
         margin: auto;
     }
 
@@ -22,15 +22,14 @@
             display: flex;
             gap: 30px;
             margin-top: 20px;
+        }
+        .icon {
+            // width: 30px;
+            // height: 30px;
+            transition: transform 0.3s;
 
-            .icon {
-                width: 30px;
-                height: 30px;
-                transition: transform 0.3s;
-
-                &:hover {
-                    transform: scale(1.2);
-                }
+            &:hover {
+                transform: scale(1.2);
             }
         }
     }
