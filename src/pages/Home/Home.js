@@ -4,7 +4,6 @@ import styles from "./Home.module.scss";
 import Image from "~/components/Image";
 import image3 from '~/assets/images/img3.jpg';
 import image4 from '~/assets/images/img4.jpg';
-import image5 from '~/assets/images/img5.jpg';
 import Button from "~/components/Button/Button";
 
 const cx = classNames.bind(styles)
@@ -12,7 +11,7 @@ const products = [
     {
         id: 1,
         name: 'Outerty Club Tee / Connoli Cream',
-        defaultImage: image5,
+        defaultImage: image4,
         hoverImage: image3,
         salePrice: '177.000₫',
         originalPrice: '380.000₫',
@@ -22,8 +21,8 @@ const products = [
     {
         id: 2,
         name: 'Outerty Billiard Club Tee / Black',
-        defaultImage: image3,
-        hoverImage: image4,
+        defaultImage: image4,
+        hoverImage: image3,
         salePrice: '177.000₫',
         originalPrice: '380.000₫',
         discount: null,
@@ -31,9 +30,9 @@ const products = [
     },
     {
         id: 3,
-        name: 'Outerty Self Love Tee / Connoli Cream',
+        name: 'Outerty Self Love Tee / Cream',
         defaultImage: image4,
-        hoverImage: image5,
+        hoverImage: image3,
         salePrice: '193.000₫',
         originalPrice: '380.000₫',
         discount: '-49%',
@@ -51,9 +50,9 @@ const products = [
     },
     {
         id: 5,
-        name: 'Outerty Bunnies Tee / Red',
+        name: 'Outerty Bunnies / Red',
         defaultImage: image4,
-        hoverImage: image5,
+        hoverImage: image3,
         salePrice: '187.000₫',
         originalPrice: '380.000₫',
         discount: '-51%',
@@ -62,8 +61,8 @@ const products = [
     {
         id: 6,
         name: 'Outerty Bunnies Tee / Black',
-        defaultImage: image3,
-        hoverImage: image4,
+        defaultImage: image4,
+        hoverImage: image3,
         salePrice: '187.000₫',
         originalPrice: '380.000₫',
         discount: '-51%',
@@ -71,8 +70,8 @@ const products = [
     },
     {
         id: 7,
-        name: 'Outerty Bunnies Tee / Connoli Cream',
-        defaultImage: image5,
+        name: 'Outerty Bunnies Tee / Cream',
+        defaultImage: image4,
         hoverImage: image3,
         salePrice: '187.000₫',
         originalPrice: '380.000₫',

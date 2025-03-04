@@ -19,7 +19,7 @@
     .product-item {
         position: relative;
         cursor: pointer;
-        font-size: 14px;
+        font-size: 16px;
 
         .hidden {
             opacity: 1;
@@ -43,7 +43,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            transition: 0.5s ease-in-out;
+            transition: 0.7s ease-in-out;
 
             &:hover {
                 transform: scale(1.02);
