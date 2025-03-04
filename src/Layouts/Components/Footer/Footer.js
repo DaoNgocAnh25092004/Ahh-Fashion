@@ -68,9 +68,6 @@ function Footer() {
                         <Image src={image1} alt="Instagram 1" />
                     </div>
                 </div>
-
-
-
             </div>
             <div className={cx('copyright')}>
                 <p>Copyright © 2025 Outerity. Powered by Haravan</p>
