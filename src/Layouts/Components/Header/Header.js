@@ -7,7 +7,6 @@ import images from '~/assets/images';
 import Image from '~/components/Image';
 import Menu, { MenuItem } from './Menu';
 
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
@@ -36,13 +35,15 @@ function Header() {
                     </div>
                     <img src={images.logo} alt="logo" />
                     <Button outline rightIcon={<FontAwesomeIcon icon={faHeadset} />}>Liên hệ với chúng tôi</Button>
+
                 </div>
-                <div className='header__info'>
+                <div className="header__info">
                     <Menu>
                         <MenuItem title="HOME" to={config.routes.home} icon={null} />
                         <MenuItem title="ALL FRODUCT" to={config.routes.allProduct} icon={null} />
                         <MenuItem className={cx("listShirt")} title="TOPS" to={config.routes.topProduct} icon={null} >
                             <MenuItem title="SHIRT" to={config.routes.shirt} />
+
                             <MenuItem title="T-SHIRT" to={config.routes.tshirt} />
                             <MenuItem title="STYLE DRESS" to={config.routes.style} />
                         </MenuItem>
@@ -54,6 +55,7 @@ function Header() {
                         <MenuItem title="ACCESSORIES" to={config.routes.accessories} icon={null} />
                         <MenuItem className={cx("listDiscount")} title="SALE" to={config.routes.sale} icon={null} >
                             <MenuItem title="Discount 10%" to={config.routes.discount10} />
+
                             <MenuItem title="Discount 20%" to={config.routes.discount20} />
                             <MenuItem title="Clearance Sale" to={config.routes.clearanceSale} />
                         </MenuItem>
@@ -66,8 +68,12 @@ function Header() {
                                 <span className={cx("login-text")} onClick={() => setShowLogin(true)}>Đăng nhập</span>
                                 <span className={cx("register-text")} onClick={() => setShowRegister(true)}>Đăng ký</span>
                             </div>
+
                         </div>
-                        <FontAwesomeIcon icon={faBasketShopping} className={cx("icon", "basket-icon")} />
+                        <FontAwesomeIcon
+                            icon={faBasketShopping}
+                            className={cx('icon', 'basket-icon')}
+                        />
                     </div>
                 </div>
             </div>
@@ -78,7 +84,5 @@ function Header() {
 
 Header.propTypes = {
     children: PropTypes.node,
-}
+};
 export default Header;
-
-

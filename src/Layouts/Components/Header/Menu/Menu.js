@@ -17,7 +17,6 @@ function Menu({ children }) {
 
 Menu.propTypes = {
     children: PropTypes.node.isRequired,
-}
+};
+
 export default Menu;
-
-
