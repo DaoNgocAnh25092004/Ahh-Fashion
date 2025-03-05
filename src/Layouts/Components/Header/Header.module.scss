@@ -7,10 +7,6 @@
 
     > div {
         width: var(--width-screen);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
         margin-bottom: 15px;
 
         > div:first-child {
@@ -20,119 +16,112 @@
             padding: 10px 0;
             width: 100%;
 
+            > div:last-child {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                gap: 3rem;
+            }
+        }
+    }
 
+    .list--icon {
+        display: flex;
+        gap: 4rem;
 
-        >div:last-child {
+        > .icon {
+            background-color: var(--brown-color);
+            padding: 8px;
+            border-radius: 20px;
+            color: var(--white-color);
 
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    img {
+        width: 100px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .user-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    .list-btn {
+        display: none;
+        position: absolute;
+        top: 45px;
+        left: -60px;
+        min-width: 150px;
+
+        span {
+            cursor: pointer;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
             align-items: center;
             width: 100%;
-            gap: 3rem;
+            padding: 8px;
+            background-color: var(--brown2-color);
+
+            &:hover {
+                background-color: var(--brown-color);
+                color: var(--white-color);
+            }
         }
     }
-}
 
-.input_search {
-    border: 1px solid var(--primary-color);
-    border-radius: 20px;
-    padding: 10px 40px;
-
-}
-
-
-
-.list--icon {
-    display: flex;
-    align-items: center;
-    gap: 4rem;
-
-    >.icon {
+    .user-icon {
+        padding: 8px;
         background-color: var(--brown-color);
-        padding: 8px;
         border-radius: 20px;
+        cursor: pointer;
         color: var(--white-color);
+    }
 
-        &:hover {
+    .user-container:hover {
+        > .list-btn:after {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
             cursor: pointer;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid var(--brown2-color);
         }
+    }
+
+    .user-container:hover .list-btn {
+        display: block;
     }
 }
 
-img {
-    width: 100px;
-    height: auto;
-    object-fit: contain;
-}
-
-.user-container {
+.box-search {
     position: relative;
-    display: inline-block;
-}
-
-.list-btn {
-    display: none;
-    position: absolute;
-    top: -10px;
-    left: -60px;
-    transform: translateY(50px);
-    min-width: 150px;
-    border: 1px solid rgb(243, 241, 237);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-
-    span {
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        padding: 8px;
-        background-color: var(--brown2-color);
-
-
-        &:hover {
-            background-color: var(--brown-color);
-            color: var(--white-color);
-        }
+    > input {
+        border: 1px solid var(--primary-color);
+        border-radius: 20px;
+        padding: 10px 40px;
     }
-}
-
-.user-icon {
-    padding: 8px;
-    background-color: var(--brown-color);
-    border-radius: 20px;
-    cursor: pointer;
-    color: var(--white-color);
-}
-
-.user-container:hover {
-    > .list-btn:after {
-        content: '';
+    > svg {
         position: absolute;
-        top: -10px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 0;
-        height: 0;
-        cursor: pointer;
-        border-left: 10px solid transparent;
-        border-right: 10px solid transparent;
-        border-bottom: 10px solid var(--brown2-color);
-
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
     }
 }
 
-.user-container:hover .list-btn {
-    display: block;
+.header__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.btn--seach {
-    position: relative;
-}
-
-.search-icon {
-    position: absolute;
-    left: 11%;
-    transform: translateY(60%);
-}
-
