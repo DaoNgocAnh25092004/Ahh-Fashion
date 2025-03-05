@@ -1,4 +1,4 @@
-export const Google = ({ width = '2.4rem', height = '2.4rem', className }) => (
+export const Google = ({ width = '2.4rem', height = '2.rem', className }) => (
     <svg
         className={className}
         width={width}
@@ -40,8 +40,8 @@ export const Google = ({ width = '2.4rem', height = '2.4rem', className }) => (
 );
 
 export const Facebook = ({
-    width = '2.4rem',
-    height = '2.4rem',
+    width = '2.8rem',
+    height = '3.4rem',
     className,
 }) => (
     <svg
@@ -62,7 +62,7 @@ export const Facebook = ({
     </svg>
 );
 
-export const Tiktok = ({ width = '2.4rem', height = '2.4rem', className }) => (
+export const Tiktok = ({ width = '2.4rem', height = '2.8rem', className }) => (
     <svg
         className={className}
         width={width}
