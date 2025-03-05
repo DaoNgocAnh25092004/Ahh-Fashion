@@ -1,4 +1,4 @@
-export const Google = ({ width = '2.4rem', height = '2.rem', className }) => (
+export const Google = ({ width = '2.4rem', height = '2.4rem', className }) => (
     <svg
         className={className}
         width={width}

@@ -6,48 +6,31 @@ import styles from './Menu.module.scss';
 
 const cx = classNames.bind(styles);
 
-function MenuItem({ title, to, icon, children }) {
+function MenuItem({ title, to, children }) {
     const [isOpen, setIsOpen] = useState(false);
     return (
-
-
         <div
             className={cx('menu-item', { 'has-children': children })}
             onMouseEnter={() => setIsOpen(true)}
             onMouseLeave={() => setIsOpen(false)}
         >
-        <NavLink className={(nav) => cx('menu__item', { active: nav.isActive })} to={to}>
-            {icon}
-            <span>{title}</span>
-        </NavLink>
+            <NavLink
+                className={(nav) => cx('menu__item', { active: nav.isActive })}
+                to={to}
+            >
+                <span>{title}</span>
+            </NavLink>
 
             {children && isOpen && (
-                <div className={cx('submenu')}>
-                    {children}
-                </div>
+                <div className={cx('submenu')}>{children}</div>
             )}
         </div>
-
-
-
     );
-
 }
 
 MenuItem.propTypes = {
     title: PropTypes.string.isRequired,
     to: PropTypes.string.isRequired,
-    icon: PropTypes.node.isRequired,
-    // className: PropTypes.string,
     children: PropTypes.node,
-    // subMenu: PropTypes.arrayOf(
-    //     PropTypes.shape({
-    //         title: PropTypes.string.isRequired,
-    //         to: PropTypes.string.isRequired,
-    //         icon: PropTypes.node,
-    //     })
-    // )
-}
+};
 export default MenuItem;
-
-

@@ -1,13 +1,8 @@
 import classNames from 'classnames/bind';
 import styles from './Footer.module.scss';
-import { Google, Facebook, Tiktok } from "~/components/Icons";
+import { Google, Facebook, Tiktok } from '~/components/Icons';
 
-import logo from '~/assets/images/boconthuong.png';
-import image1 from '~/assets/images/img1.jpg';
-import image2 from '~/assets/images/img2.jpg';
-import image3 from '~/assets/images/img3.jpg';
-import image4 from '~/assets/images/img4.jpg';
-import image5 from '~/assets/images/img5.jpg';
+import images from '~/assets/images';
 import Image from '~/components/Image';
 
 const cx = classNames.bind(styles);
@@ -23,7 +18,7 @@ function Footer() {
                         MST 8752797026-001 do UBND Q. Tân Bình cấp ngày
                         14/11/2022
                     </p>
-                    <img src={logo} alt="logo" />
+                    <img src={images.logoFooter} alt="logo" />
                 </div>
 
                 <div className={cx('footer-section')}>
@@ -78,12 +73,12 @@ function Footer() {
                 <div className={cx('footer-section')}>
                     <h4>Instagram</h4>
                     <div className={cx('instagram-grid')}>
-                        <Image src={image1} alt="Instagram 1" />
-                        <Image src={image2} alt="Instagram 2" />
-                        <Image src={image3} alt="Instagram 3" />
-                        <Image src={image4} alt="Instagram 4" />
-                        <Image src={image5} alt="Instagram 3" />
-                        <Image src={image1} alt="Instagram 1" />
+                        <Image src={images.img1} alt="Instagram 1" />
+                        <Image src={images.img2} alt="Instagram 2" />
+                        <Image src={images.img3} alt="Instagram 3" />
+                        <Image src={images.img4} alt="Instagram 4" />
+                        <Image src={images.img5} alt="Instagram 3" />
+                        <Image src={images.img1} alt="Instagram 1" />
                     </div>
                 </div>
             </div>

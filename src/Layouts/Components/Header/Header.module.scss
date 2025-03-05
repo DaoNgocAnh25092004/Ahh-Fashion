@@ -7,10 +7,6 @@
 
     >div {
         width: var(--width-screen);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
         margin-bottom: 15px;
 
         >div:first-child {
@@ -20,10 +16,7 @@
             padding: 10px 0;
             width: 100%;
 
-
-
             >div:last-child {
-
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
@@ -33,18 +26,8 @@
         }
     }
 
-    .input_search {
-        border: 1px solid var(--primary-color);
-        border-radius: 20px;
-        padding: 10px 40px;
-
-    }
-
-
-
     .list--icon {
         display: flex;
-        align-items: center;
         gap: 4rem;
 
         >.icon {
@@ -73,12 +56,9 @@
     .list-btn {
         display: none;
         position: absolute;
-        top: -10px;
+        top: 45px;
         left: -60px;
-        transform: translateY(50px);
         min-width: 150px;
-        border: 1px solid rgb(243, 241, 237);
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 
         span {
             cursor: pointer;
@@ -88,7 +68,6 @@
             width: 100%;
             padding: 8px;
             background-color: var(--brown2-color);
-
 
             &:hover {
                 background-color: var(--brown-color);
@@ -118,22 +97,33 @@
             border-left: 10px solid transparent;
             border-right: 10px solid transparent;
             border-bottom: 10px solid var(--brown2-color);
-
         }
     }
 
     .user-container:hover .list-btn {
         display: block;
     }
+}
 
-    .btn--seach {
-        position: relative;
+.box-search {
+    position: relative;
+
+    >input {
+        border: 1px solid var(--primary-color);
+        border-radius: 20px;
+        padding: 10px 40px;
     }
 
-    .search-icon {
+    >svg {
         position: absolute;
-        left: 11%;
-        transform: translateY(60%);
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
     }
 
+    .header__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
