@@ -40,7 +40,7 @@ export const Google = ({ width = '2.4rem', height = '2.rem', className }) => (
 );
 
 export const Facebook = ({
-    width = '2.8rem',
+    width = '3.4rem',
     height = '3.4rem',
     className,
 }) => (
@@ -76,4 +76,3 @@ export const Tiktok = ({ width = '2.4rem', height = '2.8rem', className }) => (
         />
     </svg>
 );
-

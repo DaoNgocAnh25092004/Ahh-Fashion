@@ -1,6 +1,7 @@
 import classNames from 'classnames/bind';
 import styles from './Footer.module.scss';
 import { Google, Facebook, Tiktok } from "~/components/Icons";
+
 import logo from '~/assets/images/boconthuong.png';
 import image1 from '~/assets/images/img1.jpg';
 import image2 from '~/assets/images/img2.jpg';
@@ -15,11 +16,13 @@ function Footer() {
     return (
         <div className={cx('footer')}>
             <div className={cx('container')}>
-
                 <div className={cx('footer-section')}>
                     <h4>Giới thiệu</h4>
                     <p>Hộ Kinh Doanh Bao GT</p>
-                    <p>MST 8752797026-001 do UBND Q. Tân Bình cấp ngày 14/11/2022</p>
+                    <p>
+                        MST 8752797026-001 do UBND Q. Tân Bình cấp ngày
+                        14/11/2022
+                    </p>
                     <img src={logo} alt="logo" />
                 </div>
 
@@ -40,19 +43,34 @@ function Footer() {
 
                 <div className={cx('footer-section')}>
                     <h4>Thông tin liên hệ</h4>
-                    <p>📍 22 Nguyễn Thái Học - Phường Tân Thành - Quận Tân Phú - TP. Hồ Chí Minh</p>
+                    <p>
+                        📍 22 Nguyễn Thái Học - Phường Tân Thành - Quận Tân Phú
+                        - TP. Hồ Chí Minh
+                    </p>
                     <p>📞 086 2642568</p>
                     <p>📜 coming soon</p>
                     <p>📧 outerity.local@gmail.com</p>
-                    <div className={cx("social-icons")}>
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                            <Facebook className={cx("icon")} />
+                    <div className={cx('social-icons')}>
+                        <a
+                            href="https://facebook.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Facebook className={cx('icon')} />
                         </a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                            <Tiktok className={cx("icon")} />
+                        <a
+                            href="https://twitter.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Tiktok className={cx('icon')} />
                         </a>
-                        <a href="https://google.com" target="_blank" rel="noopener noreferrer">
-                            <Google className={cx("icon")} />
+                        <a
+                            href="https://google.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Google className={cx('icon')} />
                         </a>
                     </div>
                 </div>
@@ -73,6 +91,6 @@ function Footer() {
                 <p>Copyright © 2025 Outerity. Powered by Haravan</p>
             </div>
         </div>
-    )
+    );
 }
-export default Footer
+export default Footer;

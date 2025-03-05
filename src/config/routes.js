@@ -1,5 +1,3 @@
-import Outerwear from "~/pages/Outerwear";
-
 const routes = {
     home: '/',
     allProduct: '/all-product',
@@ -7,8 +5,7 @@ const routes = {
     bottomProduct: '/bottom-product',
     accessories: '/accessories',
     Outerwear: '/outerwear',
-    sale : '/sale',
-
+    sale: '/sale',
 };
 
 export default routes;

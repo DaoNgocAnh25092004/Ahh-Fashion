@@ -2,6 +2,7 @@
 import config from '~/config';
 
 // Layouts
+import SidebarLayout from '~/Layouts/SideBarLayout/SideBarLayout';
 
 // Page
 import Home from '~/pages/Home';
@@ -22,6 +23,7 @@ const publicRoutes = [
     {
         path: config.routes.allProduct,
         component: AllProduct,
+        layout: SidebarLayout,
     },
     {
         path: config.routes.Outerwear,
@@ -43,8 +45,7 @@ const publicRoutes = [
     {
         path: config.routes.sale,
         component: Sale,
-    }
-
+    },
 ];
 
 // Routes private
