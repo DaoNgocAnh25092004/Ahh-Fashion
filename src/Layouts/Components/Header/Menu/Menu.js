@@ -9,7 +9,7 @@ function Menu({ children }) {
     return (
         <nav className={cx('menu')}>
             {children}
-        </nav> 
+        </nav>
 
     );
 
