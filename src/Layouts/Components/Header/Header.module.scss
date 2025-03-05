@@ -20,15 +20,10 @@
             padding: 10px 0;
             width: 100%;
 
-            input[type='text'] {
-                border: 1px solid var(--primary-color);
-                border-radius: 20px;
-                padding: 10px 20px;
-                outline: none;
-            }
-        }
 
-        > div:last-child {
+
+        >div:last-child {
+
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -38,15 +33,25 @@
     }
 }
 
+.input_search {
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+    padding: 10px 40px;
+
+}
+
+
+
 .list--icon {
     display: flex;
     align-items: center;
     gap: 4rem;
 
-    > .icon {
-        background-color: var(--skyblue-color);
+    >.icon {
+        background-color: var(--brown-color);
         padding: 8px;
         border-radius: 20px;
+        color: var(--white-color);
 
         &:hover {
             cursor: pointer;
@@ -82,9 +87,11 @@ img {
         align-items: center;
         width: 100%;
         padding: 8px;
+        background-color: var(--brown2-color);
+
 
         &:hover {
-            background-color: var(--skyblue-color);
+            background-color: var(--brown-color);
             color: var(--white-color);
         }
     }
@@ -92,9 +99,10 @@ img {
 
 .user-icon {
     padding: 8px;
-    background-color: var(--skyblue-color);
+    background-color: var(--brown-color);
     border-radius: 20px;
     cursor: pointer;
+    color: var(--white-color);
 }
 
 .user-container:hover {
@@ -109,10 +117,22 @@ img {
         cursor: pointer;
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
-        border-bottom: 10px solid rgb(243, 241, 237);
+        border-bottom: 10px solid var(--brown2-color);
+
     }
 }
 
 .user-container:hover .list-btn {
     display: block;
 }
+
+.btn--seach {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    left: 11%;
+    transform: translateY(60%);
+}
+
