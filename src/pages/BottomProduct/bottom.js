@@ -1,6 +1,7 @@
 function bottom() {
     return (<div>
-        bottomProduct\</div>
+        bottomProduct
+        </div>
     );
 }
 
